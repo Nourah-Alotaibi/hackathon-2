@@ -221,3 +221,6 @@ button.ghost {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
+.space{
+  position: absolute, bottom: 0;
+}
