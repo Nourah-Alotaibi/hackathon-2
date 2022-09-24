@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="buy1.css">
+<script src="buy1.js"></script>
+</head>
+
+<h1>Personal Information</h1>
+
+
+<body>
+<form action="process.php" method="post">
+  <div class="elem-group">
+    <label for="name">Occupation</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Occupation" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Company</label>
+    <input type="email" id="email" name="visitor_email" placeholder="Company Name" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Salary</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="00000000" >
+  </div>
+
+  <div class="elem-group">
+    <label for="phone">civil id</label>
+    <input type="tel" id="civil" name="visitor_id" placeholder="00000000" >
+  </div>
+ 
+  <hr>
+
+  <!-- <div class="elem-group inlined">
+    <label for="checkin-date">Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required>
+  </div> -->
+
+
+  <!-- <div class="elem-group">
+    <label for="message">Comments</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." ></textarea>
+  </div> -->
+  <button type="submit">Next</button>
+</form>
+</body>
+</html>
