@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Personal info</title>
+<link rel="stylesheet" href="book.css">
+<script src="book.js"></script>
+</head>
+
+<h1>Personal Information</h1>
+
+
+<body>
+<form action="personal.php" method="post">
+  <div class="elem-group">
+    <label for="text">Occupation</label>
+    <input type="text" id="text" name="occupation" placeholder="Occupation" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="integer">Civil ID</label>
+    <input type="integer" id="integer" name="civilid" placeholder="Civilid" >
+  </div>
+  <div class="elem-group">
+    <label for="text">Company</label>
+    <input type="text" id="text" name="company" placeholder="Company Name" required>
+  </div>
+  <div class="elem-group">
+    <label for="integer">Salary</label>
+    <input type="integer" id="integer" name="salary" placeholder="" >
+  </div>
+  
+  <hr>
+
+
+
+
+  <div class="elem-group">
+    <label for="message">Comments</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." ></textarea>
+  </div>
+  <button type="submit"><a href="main2.html">Submit</a></button>
+</form>
+</body>
+</html>

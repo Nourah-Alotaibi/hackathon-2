@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Information of Real estate</title>
+<link rel="stylesheet" href="book.css">
+<script src=></script>
+</head>
+<h1>Information of Real Estate</h1>
+
+
+<body>
+<form action="info.php" method="post">
+  <div class="elem-group">
+    <label for="name">Type of Real Estate</label>
+    <input type="text" id="name" name="realestate" placeholder="Appartment - House" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="text">Area</label>
+    <input type="text" id="text" name="area" placeholder="Area" required>
+  </div>
+  <div class="elem-group">
+    <label for="text">Address</label>
+    <input type="text" id="text" name="address" placeholder="Address" >
+  </div>
+  <div class="elem-group">
+    <label for="phone">Owner Contact Number</label>
+    <input type="tel" id="phone" name="ownernum" placeholder="00000000" >
+  </div>
+  <div class="elem-group">
+    <label for="integer">Expected Amount</label>
+    <input type="integer" id="integer" name="expamount" placeholder="" >
+  </div>
+  <div class="elem-group">
+    <label for="text">Availability</label>
+    <input type="text" id="text" name="availability" placeholder="" >
+  </div>
+  <hr>
+
+
+  <button type="submit"><a href="personal.html">Next</a></button>
+</form>
+</body>
+</html>
