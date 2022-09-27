@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bill Splitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/2d2b5aa704.js"></script><link rel="stylesheet" href="./split.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="header">
+    Bill Splitter
+  </div>
+
+  <form class="insert">
+    <label id="totalL"><i class="fas fa-coins"></i> How much?</label>
+    <input type="number" id="total" placeholder="add the total">
+
+     <label id="totalL"><i class="fas fa-users"></i> How many?</label>
+    <input type="number" id="people" placeholder="add the number of people">
+
+    <label id="tipL"><i class="fas fa-heart"></i>   <button id="addTip"> </button></label>
+    <div id="tipInput">
+      <input type="number" id="tipPercent" placeholder="add % of the total">
+    </div>
+    <div class="buttonSpace">
+      <button id="splitBtn">Split!</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <div id="perPerson">0</div>
+  </form>
+</div>
+
+<!-- partial -->
+  <script  src="./splitfunction.js"></script>
+
+</body>
+</html>
